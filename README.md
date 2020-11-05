@@ -1,19 +1,19 @@
 
 ## EFI
-OpenCore: 0.6.2
+OpenCore: ~~0.6.2~~ 升级到0.6.3  
 macOS version: 10.15.7
 
 ## 硬件配置
 
 | 配件   | 型号 | 说明 |
 |------|----|----|
-| 主板   |  昂达H410D4 IPC  |  DP * 1, HDMI * 1  |
-| CPU  |  i5-10400  |    |
+| 主板   |  昂达H410D4 IPC  |  USB3 * 1, USB2 * 2, Tpye-C * 1 |
+| CPU  |  i5-10400  |  6c12t, L3 12M  |
 | 内存   |  酷兽ddr4 2666（笔记本）  |  16G * 2  |
-| 显卡   |  Intel UHD Graphics 630  |  未测试4k以及双显示器  |
+| 显卡   |  Intel UHD Graphics 630  |  DP * 1, HDMI * 1  |
 | SSD  |  西数SN550 500G  |  NVME  |
 | 声卡   |  ALC662  |  注入alcid=5  |
-| 有线网卡 |  RTL8111  |    |
+| 有线网卡 |  RTL8111  |  千兆网卡  |
 | 无线网卡 |  AC3168  |  itlwm驱动  |
 | 电源 |  DC电源  |  150w  |
 | 机箱 |  酷鱼MG PLUS DC-ITX  |    |
