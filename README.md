@@ -43,12 +43,19 @@ macOS version: Catalina 10.15.7 / Big sur 11.0.1
 
 
 ## 已知问题
-* ~~100兆电信带宽环境下无线网卡带宽测试30Mbps左右, 50兆也可以跑到26Mbps~~ WIFI不满速
+* WIFI不满速
 * AirDrop不可用
 
 ## 关于英特尔网卡问题
+
+[AirportItlwm发行版](https://github.com/OpenIntelWireless/itlwm/releases)
+建议自行替换，beta版本不更新到此项目
 
 *有需要的可以更换博通网卡（博通网卡驱动方法自己找）,移除以下内核*
 * AirportItlwm.kext
 * IntelBluetoothFirmware.kext
 * IntelBluetoothInjector.kext
+
+##### 2020-11-24
+
+测试v1.2.0-alpha [AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases)，目测网速提升20%-50%。十分看好这个项目。建议长期关注
