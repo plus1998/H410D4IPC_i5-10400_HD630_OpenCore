@@ -1,6 +1,6 @@
 
 # EFI
-OpenCore: ~~0.6.2~~ 升级到0.6.3  
+OpenCore: 0.6.3  
 macOS version: Catalina 10.15.7 / Big sur 11.0.1
 
 ## 硬件配置
@@ -12,35 +12,17 @@ macOS version: Catalina 10.15.7 / Big sur 11.0.1
 | 内存   |  酷兽ddr4 2666（笔记本）  |  16G * 2  |
 | 显卡   |  Intel UHD Graphics 630  |  DP * 1, HDMI * 1  |
 | SSD  |  西数SN550 500G  |  NVME  |
-| 声卡   |  ALC662  |  注入alcid=5  |
+| 声卡   |  ALC662  |  alcid=5  |
 | 有线网卡 |  RTL8111  |  千兆网卡  |
 | 无线网卡 |  AC3168  |  itlwm驱动  |
 | 电源 |  DC电源  |  150w  |
 | 机箱 |  酷鱼MG PLUS DC-ITX  |    |
 
 
-## Catalina 说明
-* 已做主板定制化，不建议不同型号主板使用
-* 蓝牙正常工作，WIFI能满足个人日常使用，点击查看[英特尔网卡支持列表](https://docs.oiw.workers.dev/itlwm/Compat.html#gen-1)
-* 目测休眠正常
-
-# 关于Big Sur
-
-*11.0.1已经发布了，原来的EFI可以升级，升级之后可以开机，但是画面没有显示。*
-
-` 我创建了一个新的EFI用于支持Big Sur引导( EFI在BigSur文件夹中 ) `
-
-**由于测试条件有限，我不保证Big Sur的EFI可以在Catalina上正常引导, 也不保证Big Sur的EFI可以顺利升级**
-**建议<font color="#dd0000">使用原EFI在线升级后</font>到windows, linux或者PE下替换 EFI。也欢迎测试成功的在issue中反馈（失败就不用反馈了）**
-
-## Big sur 说明
-
-*基本上与Catalina使用一致*
+## 说明
 
 * 已做USB定制: TypeC, USB3正常
 * 蓝牙正常工作，WIFI能满足个人日常使用
-
-
 
 ## 已知问题
 * WIFI不满速
@@ -59,3 +41,10 @@ macOS version: Catalina 10.15.7 / Big sur 11.0.1
 ##### 2020-11-24
 
 测试v1.2.0-alpha [AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases)，目测网速提升20%-50%。十分看好这个项目。建议长期关注
+
+
+##### 2020-12-15
+
+* 热心网友反馈，10.15.7可以正常使用新EFI，所以删除了原EFI。如遇到10.15.7英特尔网卡无法使用的情况。请自行替换AirportItlwm。
+保持在OC 0.6.3
+* 由于条件限制，如遇到蓝牙或者usb口无法使用的情况，请取消勾选 USBPorts.kext, USBPower.kext。 同时勾选 USBInjectAll.kext 开机后自行定制USB。
