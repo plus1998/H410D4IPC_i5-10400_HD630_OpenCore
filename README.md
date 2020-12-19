@@ -1,7 +1,7 @@
 
 # EFI
-OpenCore: 0.6.3  
-macOS version: Catalina 10.15.7 / Big sur 11.0.1
+OpenCore: 0.6.4
+macOS version: Big sur 11.1
 
 ## 硬件配置
 
@@ -31,7 +31,6 @@ macOS version: Catalina 10.15.7 / Big sur 11.0.1
 ## 关于英特尔网卡问题
 
 [AirportItlwm发行版](https://github.com/OpenIntelWireless/itlwm/releases)
-建议自行替换，beta版本不更新到此项目
 
 *有需要的可以更换博通网卡（博通网卡驱动方法自己找）,移除以下内核*
 * AirportItlwm.kext
@@ -48,3 +47,8 @@ macOS version: Catalina 10.15.7 / Big sur 11.0.1
 * 热心网友反馈，10.15.7可以正常使用新EFI，所以删除了原EFI。如遇到10.15.7英特尔网卡无法使用的情况。请自行替换AirportItlwm。
 保持在OC 0.6.3
 * 由于条件限制，如遇到蓝牙或者usb口无法使用的情况，请取消勾选 USBPorts.kext, USBPower.kext。 同时勾选 USBInjectAll.kext 开机后自行定制USB。
+
+##### 2020-12-19
+
+* 更新到OC 0.6.4
+* 更新plist修复引导版本识别错误的问题
