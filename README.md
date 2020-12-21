@@ -14,7 +14,7 @@ macOS version: Big sur 11.1
 | SSD  |  西数SN550 500G  |  NVME  |
 | 声卡   |  ALC662  |  alcid=5  |
 | 有线网卡 |  RTL8111  |  千兆网卡  |
-| 无线网卡 |  AC3168  |  itlwm驱动  |
+| 无线网卡 |  BCM94360CS2  |  免驱  |
 | 电源 |  DC电源  |  150w  |
 | 机箱 |  酷鱼MG PLUS DC-ITX  |    |
 
@@ -22,17 +22,10 @@ macOS version: Big sur 11.1
 ## 说明
 
 * 已做USB定制: TypeC, USB3正常
-* 蓝牙正常工作，WIFI能满足个人日常使用
 
-## 已知问题
-* WIFI不满速
-* AirDrop不可用
+## 关于英特尔网卡问题 (2020-12-21已移除英特尔网卡驱动)
 
-## 关于英特尔网卡问题
-
-[AirportItlwm发行版](https://github.com/OpenIntelWireless/itlwm/releases)
-
-*有需要的可以更换博通网卡（博通网卡驱动方法自己找）,移除以下内核*
+*相关内核*
 * AirportItlwm.kext
 * IntelBluetoothFirmware.kext
 * IntelBluetoothInjector.kext
@@ -52,3 +45,8 @@ macOS version: Big sur 11.1
 
 * 更新到OC 0.6.4
 * 更新plist修复引导版本识别错误的问题
+
+##### 2020-12-21
+
+* 终于选择弃暗投明，放弃了英特尔网卡。换了 BCM94360CS2 ，重新定制了USB。
+* 继续使用英特尔网卡的前往 [AirportItlwm发行版](https://github.com/OpenIntelWireless/itlwm/releases) 下载驱动
