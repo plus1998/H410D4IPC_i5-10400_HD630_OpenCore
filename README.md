@@ -5,6 +5,8 @@ OpenCore版本: 0.7.5
 
 更新EFI前请做EFI备份，升级系统有风险，请知悉
 
+![系统信息](https://github.com/plusl894860970/H410D4IPC_i5-10400_HD630_OC_BigSur/blob/3140e25e6ab1c1ff71dcf829a3bee53145d1c00c/images/info.png)
+
 ## 硬件配置
 
 | 配件   | 型号 | 说明 |
