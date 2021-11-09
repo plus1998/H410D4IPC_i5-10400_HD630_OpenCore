@@ -1,14 +1,16 @@
 
 # EFI
-OpenCore: 0.6.4
-macOS version: Big sur 11.1
+OpenCore版本: 0.7.5
+支持macOS版本: Catalina, Big Sur, Monterey
+
+更新EFI前请做EFI备份，升级系统有风险，请知悉
 
 ## 硬件配置
 
 | 配件   | 型号 | 说明 |
 |------|----|----|
 | 主板   |  昂达H410D4 IPC  |  USB3 * 1, USB2 * 2, Tpye-C * 1 |
-| CPU  |  i5-10400  |  6c12t, L3 12M  |
+| CPU  |  i5-10400  |  6核12线程  |
 | 内存   |  酷兽ddr4 2666（笔记本）  |  16G * 2  |
 | 显卡   |  Intel UHD Graphics 630  |  DP * 1, HDMI * 1  |
 | SSD  |  西数SN550 500G  |  NVME  |
@@ -25,15 +27,16 @@ macOS version: Big sur 11.1
 
 ## 关于英特尔网卡问题 (2020-12-21已移除英特尔网卡驱动)
 
-*相关内核 [AirportItlwm](https://github.com/OpenIntelWireless/itlwm/releases)*
+~~AirportItlwm.kext~~
 
-* AirportItlwm.kext
-* IntelBluetoothFirmware.kext
-* IntelBluetoothInjector.kext
+~~IntelBluetoothFirmware.kext~~
+
+~~IntelBluetoothInjector.kext~~
+
 
 ##### 2020-11-24
 
-测试v1.2.0-alpha，目测网速提升20%-50%。十分看好这个项目。建议长期关注
+~~测试v1.2.0-alpha，目测网速提升20%-50%。十分看好这个项目。建议长期关注~~
 
 
 ##### 2020-12-15
@@ -52,8 +55,8 @@ macOS version: Big sur 11.1
 * 继续使用英特尔网卡的前往 [AirportItlwm发行版](https://github.com/OpenIntelWireless/itlwm/releases) 下载驱动
 
 
-## 赞赏
+##### 2021-11-09
 
-*如果觉得对你有帮助，可以请作者喝杯咖啡*
-
-<img src="https://liebian-ios.oss-cn-shenzhen.aliyuncs.com/wechat_pay_alangmeiyoui.jpeg" style="zoom:30%" />
+* 受前人恩惠，当知恩图报，敢为人先。
+* 因为没有人反馈升级到Monterey的情况，所以先直接更新OC版本到0.7.5，目前测试BigSur 11.6正常，可以直接在线升级到Monterey。
+* 因为我换了白苹果网卡完成了闭环！所以我没有再去关注[OpenIntelWireless](https://github.com/OpenIntelWireless/itlwm/releases)项目，也不再在此项目更新相关内容，请知悉
